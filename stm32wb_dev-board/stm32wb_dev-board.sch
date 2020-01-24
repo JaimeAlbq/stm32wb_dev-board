@@ -1,0 +1,97 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L stm32wb50cgx:STM32WB50CGx U?
+U 1 1 5E2D45D6
+P 5350 3550
+F 0 "U?" H 4450 5100 50  0000 C CNN
+F 1 "STM32WB50CGx" H 6050 2000 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 4350 2000 50  0001 R CNN
+F 3 "" H 5050 3600 50  0001 C CNN
+	1    5350 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E2D6DA9
+P 5050 5300
+F 0 "#PWR?" H 5050 5050 50  0001 C CNN
+F 1 "GND" H 5055 5127 50  0000 C CNN
+F 2 "" H 5050 5300 50  0001 C CNN
+F 3 "" H 5050 5300 50  0001 C CNN
+	1    5050 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E2D7481
+P 5600 5300
+F 0 "#PWR?" H 5600 5050 50  0001 C CNN
+F 1 "GND" H 5605 5127 50  0000 C CNN
+F 2 "" H 5600 5300 50  0001 C CNN
+F 3 "" H 5600 5300 50  0001 C CNN
+	1    5600 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 5100 5050 5300
+Wire Wire Line
+	5600 5300 5600 5100
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E2D811C
+P 5400 1450
+F 0 "#PWR?" H 5400 1300 50  0001 C CNN
+F 1 "+3V3" H 5415 1623 50  0000 C CNN
+F 2 "" H 5400 1450 50  0001 C CNN
+F 3 "" H 5400 1450 50  0001 C CNN
+	1    5400 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2000 5100 1700
+Wire Wire Line
+	5100 1700 5200 1700
+Connection ~ 5300 1700
+Wire Wire Line
+	5300 1700 5300 2000
+Wire Wire Line
+	5400 2000 5400 1700
+Wire Wire Line
+	5400 1700 5300 1700
+Wire Wire Line
+	5200 2000 5200 1700
+Connection ~ 5200 1700
+Wire Wire Line
+	5200 1700 5300 1700
+Wire Wire Line
+	5700 2000 5700 1700
+Wire Wire Line
+	5700 1700 5600 1700
+Connection ~ 5400 1700
+Wire Wire Line
+	5500 2000 5500 1700
+Connection ~ 5500 1700
+Wire Wire Line
+	5500 1700 5400 1700
+Wire Wire Line
+	5600 2000 5600 1700
+Connection ~ 5600 1700
+Wire Wire Line
+	5600 1700 5500 1700
+Wire Wire Line
+	5400 1450 5400 1700
+$EndSCHEMATC
